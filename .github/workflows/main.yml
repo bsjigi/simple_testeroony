@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'false'
 
       - name: Run Bridgecrew 
         id: Bridgecrew
