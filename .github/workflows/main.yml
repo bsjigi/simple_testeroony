@@ -16,7 +16,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'false'
 
-      - name: Run PrsimaCloud 
+      - name: Run Prsima Cloud 
         id: prisma-cloud
         uses: bridgecrewio/checkov-action@master 
         env:
