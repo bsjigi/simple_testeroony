@@ -16,11 +16,11 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'false'
 
-      - name: Run Bridgecrew 
-        id: Bridgecrew
-        uses: bridgecrewio/bridgecrew-action@master 
+      - name: Run PrsimaCloud 
+        id: prisma-cloud
+        uses: bridgecrewio/checkov-action@master 
         env:
-          PRISMA_API_URL: https://api.anz.prismacloud.io
+          PRISMA_API_URL: https://api.sg.prismacloud.io
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           #
